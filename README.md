@@ -29,45 +29,6 @@ Atualmente trabalho como **Desenvolvedor Full Stack na PierServ**, desenvolvendo
         />
     </a>
 </p>
-
----
-
-## Experiencia Profissional
-
-### PierServ
-**Desenvolvedor Full Stack (Python, C#, PHP, JavaScript e TypeScript)**  
-**Nov 2025 - Momento | Barueri, SP**
-
-- Desenvolvimento e evolucao de servicos backend e frontend com foco em performance, escalabilidade e manutencao.
-- Desenvolvimento e manutencao de APIs RESTful e integracoes entre sistemas com .NET, Node.js e PHP.
-- Criacao de scripts em Python para ingestao, tratamento e transformacao de dados.
-- Estruturacao de rotinas ETL e pipelines para consumo por outras aplicacoes.
-- Investigacao e resolucao de incidentes com analise de logs, monitoramento e queries SQL.
-- Participacao em deploys, CI/CD, versionamento com Git e documentacao tecnica.
-- Colaboracao com times de frontend, produto e infraestrutura para entregas ponta a ponta.
-
-### Pontal Tech
-**Analista de Integracao de Sistemas PL | APIs | SQL | Gestao de Agentes RCS | Tickets**  
-**Mar 2024 - Nov 2025 | Sao Paulo, SP - Brazil**
-
-- Gestao e resolucao de tickets tecnicos complexos com Movidesk, Jira e Pipefy.
-- Investigacao de problemas e monitoramento de metricas e logs com Grafana.
-- Integracao e testes de APIs com Postman.
-- Integracao de clientes com Google Business Communications.
-- Monitoramento, configuracao e manutencao de agentes RCS.
-- Analise tecnica de integracoes e suporte a implementacoes de produtos digitais.
-
-### Mambo WiFi
-**Analista de Integracao de Sistemas PL | APIs | SQL | Gestao de Agentes RCS | Tickets**  
-**Feb 2022 - Feb 2024 | Campinas, SP - Brazil**
-
-- Troubleshooting de integracoes e otimizacao de fluxos de comunicacao entre sistemas.
-- Analise e resolucao de problemas em infraestruturas de rede.
-- Configuracao e administracao de equipamentos Mikrotik, Fortinet, Unifi, PfSense, Cisco Meraki, Cisco WLC e Ruckus.
-- Implementacao e gerenciamento de protocolos como VPN, RADIUS, DNS, DHCP, HTTPS e autenticacao.
-- Administracao e integracao de Azure, Office 365, Active Directory e Google Workspace.
-- Integracao de sistemas e APIs corporativas, incluindo IXC Soft e RD Station.
-
 ---
 
 ## Habilidades Tecnicas
