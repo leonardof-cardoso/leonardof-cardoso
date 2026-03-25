@@ -1,75 +1,313 @@
-# Olá 👋, eu sou Leonardo Cardoso # Open to Work!!
+# Leonardo Francelino Cardoso
 
-🚀 **Desenvolvedor de Software | Sustentação & Integrações**  
-🇧🇷 Brasil
+**`Desenvolvedor Full Stack`** • **`Open to Work`**
 
-Atuo com **sustentação de aplicações críticas**, **troubleshooting avançado** e **integrações entre sistemas**.  
-Tenho foco em **estabilidade, confiabilidade e impacto real no negócio**, trabalhando diretamente com análise de incidentes e resolução de problemas em produção.
+Me chamo Leonardo Francelino Cardoso, sou formado em Analise e Desenvolvimento de Sistemas pela Universidade Nove de Julho e tambem tenho formacao em Tecnologia da Informacao / Sistemas da Informacao pela FIEB. Atuo com desenvolvimento full stack, integracoes de sistemas, APIs e dados, com experiencia em backend, frontend, cloud, redes e sustentacao de ambientes em producao.
 
-Também desenvolvo **projetos práticos em Java**, automações e aplicações voltadas para **processamento de eventos e integrações**.
+Atualmente trabalho como **Desenvolvedor Full Stack na PierServ**, desenvolvendo e evoluindo servicos com **Python, C#, PHP, JavaScript e TypeScript**. Tenho experiencia com APIs RESTful, ETL, integracoes, troubleshooting, bancos de dados relacionais, monitoramento, deploys e colaboracao com times multidisciplinares para entrega ponta a ponta.
 
----
-
-# 🌐 Onde me encontrar
-
-[![GitHub](https://img.shields.io/badge/GitHub-LEONARDOF--CARDOSO-181717?style=for-the-badge&logo=github)](https://github.com/leonardof-cardoso)
-<div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="l-card" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/l-card?trk=profile-badge">Leonardo C.</a></div>
-              
-
----
-
-# 🧠 O que eu faço
-
-- 🛠️ Sustentação de aplicações críticas  
-- 🔎 Troubleshooting e análise de incidentes  
-- 🔗 Integrações entre sistemas e APIs  
-- ⚙️ Automação de processos  
-- 🚀 Evolução de aplicações web  
-- 📡 Sistemas distribuídos  
-- 🧩 Análise de causa raiz  
-- 🎮 Desenvolvimento de plugins e automações Java  
-
----
-
-# 🛠️ Tecnologias & Ferramentas
-
-## Linguagens
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python)
-![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp)
-![JavaScript](https://img.shields.io/badge/JavaScript-FFD43B?style=for-the-badge&logo=javascript&logoColor=000)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java)
+<p align="left">
+    <a href="mailto:leogyrs@gmail.com">
+        <img 
+            alt="Email" 
+            title="Entre em contato por email" 
+            src="https://img.shields.io/badge/Email-leogyrs%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"
+        />
+    </a>
+    <a href="https://github.com/leobez110">
+        <img 
+            alt="GitHub" 
+            title="Meu perfil no GitHub" 
+            src="https://img.shields.io/badge/GitHub-leobez110-181717?style=for-the-badge&logo=github&logoColor=white"
+        />
+    </a>
+    <a href="https://www.linkedin.com/in/l-card">
+        <img 
+            alt="LinkedIn" 
+            title="Meu perfil no LinkedIn" 
+            src="https://img.shields.io/badge/LinkedIn-l--card-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+        />
+    </a>
+</p>
 
 ---
 
-## Banco de Dados
+## Experiencia Profissional
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
+### PierServ
+**Desenvolvedor Full Stack (Python, C#, PHP, JavaScript e TypeScript)**  
+**Nov 2025 - Momento | Barueri, SP**
+
+- Desenvolvimento e evolucao de servicos backend e frontend com foco em performance, escalabilidade e manutencao.
+- Desenvolvimento e manutencao de APIs RESTful e integracoes entre sistemas com .NET, Node.js e PHP.
+- Criacao de scripts em Python para ingestao, tratamento e transformacao de dados.
+- Estruturacao de rotinas ETL e pipelines para consumo por outras aplicacoes.
+- Investigacao e resolucao de incidentes com analise de logs, monitoramento e queries SQL.
+- Participacao em deploys, CI/CD, versionamento com Git e documentacao tecnica.
+- Colaboracao com times de frontend, produto e infraestrutura para entregas ponta a ponta.
+
+### Pontal Tech
+**Analista de Integracao de Sistemas PL | APIs | SQL | Gestao de Agentes RCS | Tickets**  
+**Mar 2024 - Nov 2025 | Sao Paulo, SP - Brazil**
+
+- Gestao e resolucao de tickets tecnicos complexos com Movidesk, Jira e Pipefy.
+- Investigacao de problemas e monitoramento de metricas e logs com Grafana.
+- Integracao e testes de APIs com Postman.
+- Integracao de clientes com Google Business Communications.
+- Monitoramento, configuracao e manutencao de agentes RCS.
+- Analise tecnica de integracoes e suporte a implementacoes de produtos digitais.
+
+### Mambo WiFi
+**Analista de Integracao de Sistemas PL | APIs | SQL | Gestao de Agentes RCS | Tickets**  
+**Feb 2022 - Feb 2024 | Campinas, SP - Brazil**
+
+- Troubleshooting de integracoes e otimizacao de fluxos de comunicacao entre sistemas.
+- Analise e resolucao de problemas em infraestruturas de rede.
+- Configuracao e administracao de equipamentos Mikrotik, Fortinet, Unifi, PfSense, Cisco Meraki, Cisco WLC e Ruckus.
+- Implementacao e gerenciamento de protocolos como VPN, RADIUS, DNS, DHCP, HTTPS e autenticacao.
+- Administracao e integracao de Azure, Office 365, Active Directory e Google Workspace.
+- Integracao de sistemas e APIs corporativas, incluindo IXC Soft e RD Station.
 
 ---
 
-## Infraestrutura & Ferramentas
+## Habilidades Tecnicas
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven)
-![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle)
+### Linguagens e Desenvolvimento
+
+<img 
+    align="left" 
+    alt="JavaScript"
+    title="JavaScript" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="TypeScript"
+    title="TypeScript" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Python" 
+    title="Python"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="CSharp" 
+    title="C#"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Node.js"
+    title="Node.js" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Django"
+    title="Django" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" 
+/>
+<img 
+    align="left" 
+    alt=".NET"
+    title=".NET" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="PHP" 
+    title="PHP"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Laravel" 
+    title="Laravel"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="React"
+    title="React" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Next.js" 
+    title="Next.js"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="HTML5"
+    title="HTML5" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="CSS3"
+    title="CSS3" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Tailwind CSS"
+    title="Tailwind CSS" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
+/>
+
+<br/>
+<br/>
+
+### Banco de Dados, DevOps e Integracoes
+
+<img 
+    align="left" 
+    alt="MySQL"
+    title="MySQL" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="PostgreSQL"
+    title="PostgreSQL" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="MongoDB"
+    title="MongoDB" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Docker"
+    title="Docker" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Git"
+    title="Git" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="GitHub"
+    title="GitHub" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Firebase"
+    title="Firebase" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg" 
+/>
+<img 
+    align="left" 
+    alt="Azure"
+    title="Azure" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="AWS"
+    title="AWS" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" 
+/>
+<img 
+    align="left" 
+    alt="Google Cloud"
+    title="Google Cloud" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="Postman"
+    title="Postman" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" 
+/>
+
+<br/>
+<br/>
+
+### Competencias
+
+- APIs RESTful, Webhooks, OAuth2 e SSO
+- ETL, ingestao e transformacao de dados
+- SQL com MySQL, PostgreSQL e SQL Server
+- Monitoramento, logs, troubleshooting e suporte a producao
+- Docker, Git, GitHub, CI/CD, Netlify e Vercel
+- Redes e infraestrutura com Mikrotik, Fortinet, Unifi, PfSense, Cisco Meraki, Cisco WLC e Ruckus
 
 ---
 
-# 📊 Estatísticas do GitHub
+## Educacao
 
-![Leonardo GitHub Stats](https://github-readme-stats.vercel.app/api?username=leonardof-cardoso&show_icons=true&theme=tokyonight&count_private=true)
+**Universidade Nove de Julho**  
+Formado em Analise e Desenvolvimento de Sistemas
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=leonardof-cardoso&layout=compact&theme=tokyonight&hide=html,css&langs_count=6)
+**FIEB - Fundacao Instituto de Educacao de Barueri**  
+Tecnologo em Tecnologia da Informacao / Sistemas da Informacao
 
 ---
 
-# 🚀 Objetivo
+## Contato
 
-> Foco em evoluir continuamente como desenvolvedor, atuando em sustentação, desenvolvimento e integrações, contribuindo para soluções estáveis e escaláveis.
+- Email: **leogyrs@gmail.com**
+- Telefone: **(11) 94193-4999**
+- GitHub: **[github.com/leobez110](https://github.com/leobez110)**
+- LinkedIn: **[linkedin.com/in/l-card](https://www.linkedin.com/in/l-card)**
