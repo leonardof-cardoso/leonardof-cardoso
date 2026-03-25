@@ -13,6 +13,8 @@ Também desenvolvo **projetos práticos em Java**, automações e aplicações v
 # 🌐 Onde me encontrar
 
 [![GitHub](https://img.shields.io/badge/GitHub-LEONARDOF--CARDOSO-181717?style=for-the-badge&logo=github)](https://github.com/leonardof-cardoso)
+<div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="l-card" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/l-card?trk=profile-badge">Leonardo C.</a></div>
+              
 
 ---
 
