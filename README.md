@@ -309,7 +309,7 @@ Atualmente trabalho como **Desenvolvedor Full Stack na PierServ**, desenvolvendo
     align="left" 
     alt="GitHub Top Langs" 
     height="200" 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardof-cardoso&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=12&size_weight=0.5&count_weight=0.5" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardof-cardoso&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=12&size_weight=0.5&count_weight=0.5&hide=html" 
   />
 </p>
 
