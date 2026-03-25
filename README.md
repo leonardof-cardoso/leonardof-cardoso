@@ -1,4 +1,4 @@
-# Olá 👋, eu sou Leonardo Cardoso
+# Olá 👋, eu sou Leonardo Cardoso # Open to Work!!
 
 🚀 **Desenvolvedor de Software | Sustentação & Integrações**  
 🇧🇷 Brasil
@@ -12,11 +12,7 @@ Também desenvolvo **projetos práticos em Java**, automações e aplicações v
 
 # 🌐 Onde me encontrar
 
-<p align="left">
-  <a href="https://github.com/leonardof-cardoso">
-    <img src="https://img.shields.io/badge/GitHub-LEONARDOF--CARDOSO-181717?style=for-the-badge&logo=github" />
-  </a>
-</p>
+[![GitHub](https://img.shields.io/badge/GitHub-LEONARDOF--CARDOSO-181717?style=for-the-badge&logo=github)](https://github.com/leonardof-cardoso)
 
 ---
 
@@ -66,18 +62,12 @@ Também desenvolvo **projetos práticos em Java**, automações e aplicações v
 
 # 📊 Estatísticas do GitHub
 
-<p align="left">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=leonardof-cardoso&show_icons=true&theme=tokyonight&count_private=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardof-cardoso&layout=compact&theme=tokyonight" />
-</p>
+![Leonardo GitHub Stats](https://github-readme-stats.vercel.app/api?username=leonardof-cardoso&show_icons=true&theme=tokyonight&count_private=true)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=leonardof-cardoso&layout=compact&theme=tokyonight&hide=html,css&langs_count=6)
 
 ---
 
 # 🚀 Objetivo
 
 > Foco em evoluir continuamente como desenvolvedor, atuando em sustentação, desenvolvimento e integrações, contribuindo para soluções estáveis e escaláveis.
-
----
-
-⭐ Se curtir meus projetos, considere dar uma estrela  
-🤝 Sempre aberto para colaboração e novos projetos
