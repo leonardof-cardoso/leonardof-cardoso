@@ -14,11 +14,11 @@ Atualmente trabalho como **Desenvolvedor Full Stack na PierServ**, desenvolvendo
             src="https://img.shields.io/badge/Email-leogyrs%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"
         />
     </a>
-    <a href="https://github.com/leobez110">
+    <a href="https://github.com/leonardof-cardoso">
         <img 
             alt="GitHub" 
             title="Meu perfil no GitHub" 
-            src="https://img.shields.io/badge/GitHub-leobez110-181717?style=for-the-badge&logo=github&logoColor=white"
+            src="https://img.shields.io/badge/GitHub-leonardof--cardoso-181717?style=for-the-badge&logo=github&logoColor=white"
         />
     </a>
     <a href="https://www.linkedin.com/in/l-card">
@@ -303,13 +303,13 @@ Atualmente trabalho como **Desenvolvedor Full Stack na PierServ**, desenvolvendo
     alt="GitHub Stats" 
     height="200" 
     style="padding-right: 10px;" 
-    src="https://github-readme-stats.vercel.app/api?username=leobez110&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
+    src="https://github-readme-stats.vercel.app/api?username=leonardof-cardoso&show_icons=true&theme=tokyonight&include_all_commits=true&locale=pt-br" 
   />
   <img 
     align="left" 
     alt="GitHub Top Langs" 
     height="200" 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=leobez110&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=leonardof-cardoso&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
   />
 </p>
 
@@ -337,5 +337,5 @@ Tecnologo em Tecnologia da Informacao / Sistemas da Informacao
 
 - Email: **leogyrs@gmail.com**
 - Telefone: **(11) 94193-4999**
-- GitHub: **[github.com/leobez110](https://github.com/leobez110)**
+- GitHub: **[github.com/leonardof-cardoso](https://github.com/leonardof-cardoso)**
 - LinkedIn: **[linkedin.com/in/l-card](https://www.linkedin.com/in/l-card)**
