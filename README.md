@@ -336,6 +336,3 @@ Tecnologo em Tecnologia da Informacao / Sistemas da Informacao
 ## Contato
 
 - Email: **leogyrs@gmail.com**
-- Telefone: **(11) 94193-4999**
-- GitHub: **[github.com/leonardof-cardoso](https://github.com/leonardof-cardoso)**
-- LinkedIn: **[linkedin.com/in/l-card](https://www.linkedin.com/in/l-card)**
