@@ -1,6 +1,6 @@
 # Leonardo Francelino Cardoso
 
-**`Desenvolvedor Full Stack`** • **`Open to Work`**
+**Desenvolvedor Full Stack** • 🟡 **Open to Work**
 
 Me chamo Leonardo Francelino Cardoso, sou formado em Análise e Desenvolvimento de Sistemas pela Universidade Nove de Julho e também possuo formação em Tecnologia da Informação e Sistemas da Informação pela FIEB. Atuo com desenvolvimento full stack, integrações de sistemas, APIs e dados, com experiência em backend, frontend, cloud, redes e sustentação de ambientes em produção.
 
