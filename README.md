@@ -284,6 +284,8 @@ Atualmente trabalho como **Desenvolvedor Full Stack na PierServ**, desenvolvendo
 
 ---
 
+
+
 ## Educacao
 
 **Universidade Nove de Julho**  
