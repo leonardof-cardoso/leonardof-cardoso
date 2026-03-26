@@ -2,9 +2,12 @@
 
 **`Desenvolvedor Full Stack`** • **`Open to Work`**
 
-Me chamo Leonardo Francelino Cardoso, sou formado em Analise e Desenvolvimento de Sistemas pela Universidade Nove de Julho e tambem tenho formacao em Tecnologia da Informacao / Sistemas da Informacao pela FIEB. Atuo com desenvolvimento full stack, integracoes de sistemas, APIs e dados, com experiencia em backend, frontend, cloud, redes e sustentacao de ambientes em producao.
+Me chamo Leonardo Francelino Cardoso, sou formado em Análise e Desenvolvimento de Sistemas pela Universidade Nove de Julho e também possuo formação em Tecnologia da Informação e Sistemas da Informação pela FIEB. Atuo com desenvolvimento full stack, integrações de sistemas, APIs e dados, com experiência em backend, frontend, cloud, redes e sustentação de ambientes em produção.
 
-Atualmente trabalho como **Desenvolvedor Full Stack na PierServ**, desenvolvendo e evoluindo servicos com **Python, C#, PHP, JavaScript e TypeScript**. Tenho experiencia com APIs RESTful, ETL, integracoes, troubleshooting, bancos de dados relacionais, monitoramento, deploys e colaboracao com times multidisciplinares para entrega ponta a ponta.
+Atualmente trabalho como Desenvolvedor Full Stack na PierServ, desenvolvendo e evoluindo serviços utilizando Python, .NET com C#, PHP, JavaScript e TypeScript. Tenho experiência no desenvolvimento de APIs RESTful, processos de ETL, integrações entre sistemas, troubleshooting, bancos de dados relacionais, monitoramento de aplicações, deploys e colaboração com times multidisciplinares para entregas ponta a ponta.
+
+Também possuo experiência com desenvolvimento de aplicações em .NET, incluindo criação de Web APIs, autenticação com JWT, integração com APIs externas e uso de Entity Framework, aplicando boas práticas de arquitetura e organização de projetos. Busco constantemente evoluir tecnicamente e contribuir com soluções escaláveis, seguras e de alto impacto para o negócio.
+
 
 <p align="left">
     <a href="mailto:leogyrs@gmail.com">
