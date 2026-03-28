@@ -65,16 +65,39 @@ Hoje atuo com Python, C#, PHP, JavaScript e TypeScript em cenarios que misturam 
 Esse bloco e atualizado automaticamente pelo GitHub Actions. Em vez de imagens de stats, ele mostra movimentacao real do perfil, repositorios em foco e sinais da sua atividade publica.
 
 <!-- dynamic:activity:start -->
-### Painel em preparo
+### Radar de atividade
 
-O workflow ainda nao rodou.
+Leitura automatica do perfil publico de **Leonardo Cardoso** para mostrar sinais reais de atividade, sem depender de cards externos.
 
-Quando a automacao executar, esta area sera preenchida com:
+#### Leitura rapida
+- Perfil localizado em **São Paulo - Brasil**, com projetos e atividade publica centralizados em desenvolvimento e integracao
+- Mantem **19 repositorios publicos** e uma rede de **0 seguidores** no GitHub
+- Tecnologias mais recorrentes entre os repositorios recentes: **Python, HTML, C#**
 
-- repositorios atualizados recentemente
-- eventos publicos mais recentes
-- um resumo de foco tecnico baseado no perfil
-- a data da ultima sincronizacao
+#### Repositorios em foco
+- [leonardof-cardoso](https://github.com/leonardof-cardoso/leonardof-cardoso) | Python | atualizado hoje | 0 estrelas  
+  Repositorio sem descricao publica.
+- [portfolio](https://github.com/leonardof-cardoso/portfolio) | CSS | atualizado hoje | 0 estrelas  
+  Repositorio sem descricao publica.
+- [fluxo-saas-pulseos](https://github.com/leonardof-cardoso/fluxo-saas-pulseos) | Python | atualizado hoje | 0 estrelas  
+  Repositorio sem descricao publica.
+- [bot-discord-py](https://github.com/leonardof-cardoso/bot-discord-py) | Python | atualizado ha 1 dia | 0 estrelas  
+  Bot de discord multifuncional para gerenciamento de prints, ausências e comandos úteis no Discord.
+- [chatbot-py](https://github.com/leonardof-cardoso/chatbot-py) | Python | atualizado ha 1 dia | 0 estrelas  
+  Repositorio sem descricao publica.
+
+#### Eventos publicos recentes
+- Fez push com **0 commit(s)** em `leonardof-cardoso/leonardof-cardoso` (28/03/2026)
+- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
+- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
+- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
+- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
+
+#### Mapa tecnico
+- Linguagens em evidenca nos repositorios recentes: **Python, HTML, C#, JavaScript**
+- Universo analisado: **18 repositorios ativos** entre os mais recentes
+
+_Atualizado automaticamente em 28/03/2026 16:25 UTC_
 <!-- dynamic:activity:end -->
 
 ---
