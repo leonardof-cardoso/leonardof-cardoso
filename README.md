@@ -87,12 +87,6 @@ Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack r
 - **13 repositorios** receberam atividade publica nos ultimos 30 dias
 - Stack mais presente na janela recente: **Python, C#, JavaScript**
 
-#### Linguagens mais utilizadas nos ultimos 30 dias
-```text
-[PY] Python        ################ 12
-[C#] C#            ##### 4
-```
-
 #### Repositorios em destaque
 - [bot-discord-py](https://github.com/leonardof-cardoso/bot-discord-py) | [PY] Python  
   Bot de discord multifuncional para gerenciamento de prints, ausências e comandos úteis no Discord.
