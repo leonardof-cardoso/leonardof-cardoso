@@ -78,16 +78,36 @@ Hoje atuo com Python, C#, PHP, JavaScript e TypeScript em cenarios que misturam 
 Esse bloco e atualizado automaticamente pelo GitHub Actions. A ideia aqui e manter um perfil simples, mas vivo: stack principal, linguagens fortes e projetos com cara de vitrine tecnica.
 
 <!-- dynamic:activity:start -->
-### Painel em preparo
+### Radar tecnico
 
-O workflow ainda nao rodou.
+Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack real e projetos que funcionam como vitrine tecnica.
 
-Quando a automacao executar, esta area sera preenchida com:
+#### Leitura rapida
+- Ultima movimentacao visivel em **leonardof-cardoso**, atualizado hoje
+- **13 repositorios** receberam atividade publica nos ultimos 30 dias
+- Stack mais presente na janela recente: **Python, C#, JavaScript**
 
-- linguagens de programacao mais fortes no GitHub recente
-- um grafico textual das linguagens mais utilizadas nos ultimos 30 dias
-- repositorios em destaque para recrutadores
-- a data da ultima sincronizacao
+#### Linguagens mais utilizadas nos ultimos 30 dias
+```text
+[PY] Python        ################ 12
+[C#] C#            ##### 4
+```
+
+#### Repositorios em destaque
+- [bot-discord-py](https://github.com/leonardof-cardoso/bot-discord-py) | [PY] Python  
+  Bot de discord multifuncional para gerenciamento de prints, ausências e comandos úteis no Discord.
+- [chatbot-py](https://github.com/leonardof-cardoso/chatbot-py) | [PY] Python  
+  Repositorio sem descricao publica.
+- [dotnet-jwt-auth](https://github.com/leonardof-cardoso/dotnet-jwt-auth) | [C#] C#  
+  Repositorio sem descricao publica.
+- [dotnet-task-api](https://github.com/leonardof-cardoso/dotnet-task-api) | [C#] C#  
+  Repositorio sem descricao publica.
+
+#### Mapa tecnico
+- Linguagens em evidenca nos ultimos 30 dias: **[PY] Python, [C#] C#, [JS] JavaScript, [TS] TypeScript**
+- Universo analisado: **13 sinais tecnicos** em repositorios com linguagens fortes
+
+_Atualizado automaticamente em 28/03/2026 17:47 UTC_
 <!-- dynamic:activity:end -->
 
 ---
