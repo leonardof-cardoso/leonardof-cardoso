@@ -5,7 +5,7 @@ import os
 import urllib.error
 import urllib.request
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -47,52 +47,84 @@ def relative_days(value: str) -> str:
     return f"ha {days} dias"
 
 
-def summarize_profile(user: dict[str, Any], repos: list[dict[str, Any]]) -> list[str]:
+def normalize_language(language: str | None) -> str:
+    if not language:
+        return "Outros"
+    aliases = {
+        "C#": "C#",
+        "Jupyter Notebook": "Python",
+        "Vue": "JavaScript",
+    }
+    return aliases.get(language, language)
+
+
+def icon_for_language(language: str) -> str:
+    icons = {
+        "Python": "[PY]",
+        "C#": "[C#]",
+        "JavaScript": "[JS]",
+        "TypeScript": "[TS]",
+        "PHP": "[PHP]",
+        "HTML": "[HTML]",
+        "CSS": "[CSS]",
+        "Shell": "[SH]",
+        "Dockerfile": "[DKR]",
+        "Go": "[GO]",
+        "Java": "[JAVA]",
+        "Outros": "[ETC]",
+    }
+    return icons.get(language, "[LANG]")
+
+
+def recent_window() -> datetime:
+    return datetime.now(timezone.utc) - timedelta(days=30)
+
+
+def summarize_profile(repos: list[dict[str, Any]], recent_repos: list[dict[str, Any]]) -> list[str]:
     highlights: list[str] = []
 
-    public_repos = user.get("public_repos", 0)
-    followers = user.get("followers", 0)
-    company = user.get("company")
-    location = user.get("location")
+    if recent_repos:
+        latest = recent_repos[0]
+        highlights.append(
+            f"- Ultima movimentacao visivel em **{latest['name']}**, atualizado {relative_days(latest['updated_at'])}"
+        )
+        highlights.append(
+            f"- **{len(recent_repos)} repositorios** receberam atividade publica nos ultimos 30 dias"
+        )
 
-    if company:
-        highlights.append(f"- Atua publicamente no ecossistema GitHub com base profissional ligada a **{company}**")
-    if location:
-        highlights.append(f"- Perfil localizado em **{location}**, com projetos e atividade publica centralizados em desenvolvimento e integracao")
-
-    highlights.append(f"- Mantem **{public_repos} repositorios publicos** e uma rede de **{followers} seguidores** no GitHub")
-
-    top_languages = [repo["language"] for repo in repos if repo.get("language")]
-    language_counts = Counter(top_languages)
+    language_counts = Counter(
+        normalize_language(repo.get("language")) for repo in recent_repos if repo.get("language")
+    )
     if language_counts:
         common = ", ".join(name for name, _ in language_counts.most_common(3))
-        highlights.append(f"- Tecnologias mais recorrentes entre os repositorios recentes: **{common}**")
+        highlights.append(f"- Stack mais presente na janela recente: **{common}**")
 
-    return highlights[:4]
+    if not highlights:
+        highlights.append("- Sem atividade publica suficiente nos ultimos 30 dias para montar um resumo recente")
+
+    return highlights[:3]
 
 
-def build_focus(repos: list[dict[str, Any]]) -> list[str]:
+def build_focus(recent_repos: list[dict[str, Any]]) -> list[str]:
     language_counter: Counter[str] = Counter()
     topics_counter: Counter[str] = Counter()
-    archived_count = 0
 
-    for repo in repos[:20]:
+    for repo in recent_repos:
         if repo.get("language"):
-            language_counter[repo["language"]] += 1
+            language_counter[normalize_language(repo["language"])] += 1
         for topic in repo.get("topics", []):
             topics_counter[topic] += 1
-        if repo.get("archived"):
-            archived_count += 1
 
     lines: list[str] = []
     if language_counter:
-        top_langs = ", ".join(name for name, _ in language_counter.most_common(4))
-        lines.append(f"- Linguagens em evidenca nos repositorios recentes: **{top_langs}**")
+        top_langs = ", ".join(
+            f"{icon_for_language(name)} {name}" for name, _ in language_counter.most_common(4)
+        )
+        lines.append(f"- Linguagens em evidenca nos ultimos 30 dias: **{top_langs}**")
     if topics_counter:
         top_topics = ", ".join(name for name, _ in topics_counter.most_common(4))
-        lines.append(f"- Temas recorrentes nos projetos: **{top_topics}**")
-    active_count = max(min(len(repos), 20) - archived_count, 0)
-    lines.append(f"- Universo analisado: **{active_count} repositorios ativos** entre os mais recentes")
+        lines.append(f"- Temas recorrentes nos projetos recentes: **{top_topics}**")
+    lines.append(f"- Universo analisado: **{len(recent_repos)} repositorios** com atualizacao publica recente")
     return lines
 
 
@@ -101,13 +133,12 @@ def build_repo_lines(repos: list[dict[str, Any]]) -> list[str]:
     for repo in repos[:5]:
         name = repo["name"]
         url = repo["html_url"]
-        language = repo.get("language") or "stack variada"
+        language = normalize_language(repo.get("language"))
         updated_at = repo["updated_at"]
-        stars = repo.get("stargazers_count", 0)
         description = (repo.get("description") or "Repositorio sem descricao publica.").strip()
         description = description.replace("\n", " ")
         lines.append(
-            f"- [{name}]({url}) | {language} | atualizado {relative_days(updated_at)} | {stars} estrelas  \n"
+            f"- [{name}]({url}) | {icon_for_language(language)} {language} | atualizado {relative_days(updated_at)}  \n"
             f"  {description}"
         )
     return lines
@@ -154,26 +185,83 @@ def build_event_lines(events: list[dict[str, Any]]) -> list[str]:
     return lines or ["- Sem eventos publicos recentes disponiveis na API do GitHub."]
 
 
+def build_language_chart(recent_repos: list[dict[str, Any]], events: list[dict[str, Any]]) -> list[str]:
+    repo_languages = {
+        repo["name"]: normalize_language(repo.get("language"))
+        for repo in recent_repos
+        if repo.get("name")
+    }
+    language_counter: Counter[str] = Counter()
+    cutoff = recent_window()
+
+    for event in events:
+        created_at = event.get("created_at")
+        repo_full_name = event.get("repo", {}).get("name")
+        if not created_at or not repo_full_name:
+            continue
+
+        event_date = iso_to_date(created_at)
+        if event_date < cutoff:
+            continue
+
+        repo_name = repo_full_name.split("/")[-1]
+        language = repo_languages.get(repo_name)
+        if not language:
+            continue
+
+        weight = 1
+        if event.get("type") == "PushEvent":
+            weight += len(event.get("payload", {}).get("commits", []))
+        language_counter[language] += weight
+
+    if not language_counter:
+        language_counter.update(
+            normalize_language(repo.get("language"))
+            for repo in recent_repos
+            if repo.get("language")
+        )
+
+    if not language_counter:
+        return ["```text", "Sem dados publicos suficientes nos ultimos 30 dias.", "```"]
+
+    top_items = language_counter.most_common(5)
+    max_value = top_items[0][1]
+    lines = ["```text"]
+    for language, value in top_items:
+        bar_size = max(1, round((value / max_value) * 16))
+        bar = "█" * bar_size
+        label = f"{icon_for_language(language)} {language}"
+        lines.append(f"{label:<18} {bar} {value}")
+    lines.append("```")
+    return lines
+
+
 def render_dynamic_block(user: dict[str, Any], repos: list[dict[str, Any]], events: list[dict[str, Any]]) -> str:
     generated_at = datetime.now(timezone.utc).strftime("%d/%m/%Y %H:%M UTC")
     profile_name = user.get("name") or USERNAME
+    cutoff = recent_window()
+    recent_repos = [repo for repo in repos if iso_to_date(repo["updated_at"]) >= cutoff]
+    visible_repos = recent_repos[:5] if recent_repos else repos[:5]
 
     sections = [
-        "### Radar de atividade",
+        "### Radar tecnico",
         "",
-        f"Leitura automatica do perfil publico de **{profile_name}** para mostrar sinais reais de atividade, sem depender de cards externos.",
+        f"Leitura automatica do perfil publico de **{profile_name}** com foco em stack e atividade recente, sem metricas sociais e sem cards externos.",
         "",
         "#### Leitura rapida",
-        *summarize_profile(user, repos),
+        *summarize_profile(repos, recent_repos),
         "",
-        "#### Repositorios em foco",
-        *build_repo_lines(repos),
+        "#### Linguagens mais utilizadas nos ultimos 30 dias",
+        *build_language_chart(recent_repos, events),
         "",
-        "#### Eventos publicos recentes",
+        "#### Repositorios em movimento",
+        *build_repo_lines(visible_repos),
+        "",
+        "#### Ultimos eventos publicos",
         *build_event_lines(events),
         "",
         "#### Mapa tecnico",
-        *build_focus(repos),
+        *build_focus(recent_repos),
         "",
         f"_Atualizado automaticamente em {generated_at}_",
     ]

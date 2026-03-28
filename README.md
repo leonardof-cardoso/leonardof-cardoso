@@ -43,7 +43,20 @@ Hoje atuo com Python, C#, PHP, JavaScript e TypeScript em cenarios que misturam 
 
 **Linguagens e frameworks**
 
-`Python` `C#` `.NET` `PHP` `Laravel` `JavaScript` `TypeScript` `Node.js` `React` `Next.js` `Django`
+<p align="left">
+  <img alt="Python" title="Python" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+  <img alt="C#" title="C#" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+  <img alt=".NET" title=".NET" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+  <img alt="PHP" title="PHP" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+  <img alt="JavaScript" title="JavaScript" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+  <img alt="TypeScript" title="TypeScript" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+  <img alt="Node.js" title="Node.js" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+  <img alt="React" title="React" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+  <img alt="Laravel" title="Laravel" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" />
+  <img alt="Django" title="Django" width="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
+</p>
+
+`Python` `C#` `.NET` `PHP` `JavaScript` `TypeScript` `Node.js` `React` `Laravel` `Django`
 
 **Dados, cloud e entrega**
 
@@ -62,42 +75,19 @@ Hoje atuo com Python, C#, PHP, JavaScript e TypeScript em cenarios que misturam 
 
 ## Painel vivo
 
-Esse bloco e atualizado automaticamente pelo GitHub Actions. Em vez de imagens de stats, ele mostra movimentacao real do perfil, repositorios em foco e sinais da sua atividade publica.
+Esse bloco e atualizado automaticamente pelo GitHub Actions. A ideia aqui e manter um perfil simples, mas vivo: stack principal, linguagens em evidenca e atividade publica recente sem depender daqueles cards tradicionais.
 
 <!-- dynamic:activity:start -->
-### Radar de atividade
+### Painel em preparo
 
-Leitura automatica do perfil publico de **Leonardo Cardoso** para mostrar sinais reais de atividade, sem depender de cards externos.
+O workflow ainda nao rodou.
 
-#### Leitura rapida
-- Perfil localizado em **São Paulo - Brasil**, com projetos e atividade publica centralizados em desenvolvimento e integracao
-- Mantem **19 repositorios publicos** e uma rede de **0 seguidores** no GitHub
-- Tecnologias mais recorrentes entre os repositorios recentes: **Python, HTML, C#**
+Quando a automacao executar, esta area sera preenchida com:
 
-#### Repositorios em foco
-- [leonardof-cardoso](https://github.com/leonardof-cardoso/leonardof-cardoso) | Python | atualizado hoje | 0 estrelas  
-  Repositorio sem descricao publica.
-- [portfolio](https://github.com/leonardof-cardoso/portfolio) | CSS | atualizado hoje | 0 estrelas  
-  Repositorio sem descricao publica.
-- [fluxo-saas-pulseos](https://github.com/leonardof-cardoso/fluxo-saas-pulseos) | Python | atualizado hoje | 0 estrelas  
-  Repositorio sem descricao publica.
-- [bot-discord-py](https://github.com/leonardof-cardoso/bot-discord-py) | Python | atualizado ha 1 dia | 0 estrelas  
-  Bot de discord multifuncional para gerenciamento de prints, ausências e comandos úteis no Discord.
-- [chatbot-py](https://github.com/leonardof-cardoso/chatbot-py) | Python | atualizado ha 1 dia | 0 estrelas  
-  Repositorio sem descricao publica.
-
-#### Eventos publicos recentes
-- Fez push com **0 commit(s)** em `leonardof-cardoso/leonardof-cardoso` (28/03/2026)
-- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
-- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
-- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
-- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
-
-#### Mapa tecnico
-- Linguagens em evidenca nos repositorios recentes: **Python, HTML, C#, JavaScript**
-- Universo analisado: **18 repositorios ativos** entre os mais recentes
-
-_Atualizado automaticamente em 28/03/2026 16:25 UTC_
+- linguagens em evidenca nos ultimos 30 dias
+- um grafico textual da atividade tecnica recente
+- repositorios atualizados recentemente
+- a data da ultima sincronizacao
 <!-- dynamic:activity:end -->
 
 ---
