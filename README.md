@@ -75,49 +75,19 @@ Hoje atuo com Python, C#, PHP, JavaScript e TypeScript em cenarios que misturam 
 
 ## Painel vivo
 
-Esse bloco e atualizado automaticamente pelo GitHub Actions. A ideia aqui e manter um perfil simples, mas vivo: stack principal, linguagens em evidenca e atividade publica recente sem depender daqueles cards tradicionais.
+Esse bloco e atualizado automaticamente pelo GitHub Actions. A ideia aqui e manter um perfil simples, mas vivo: stack principal, linguagens fortes e projetos com cara de vitrine tecnica.
 
 <!-- dynamic:activity:start -->
-### Radar tecnico
+### Painel em preparo
 
-Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack e atividade recente, sem metricas sociais e sem cards externos.
+O workflow ainda nao rodou.
 
-#### Leitura rapida
-- Ultima movimentacao visivel em **leonardof-cardoso**, atualizado hoje
-- **18 repositorios** receberam atividade publica nos ultimos 30 dias
-- Stack mais presente na janela recente: **Python, HTML, C#**
+Quando a automacao executar, esta area sera preenchida com:
 
-#### Linguagens mais utilizadas nos ultimos 30 dias
-```text
-[CSS] CSS          ████████████████ 14
-[PY] Python        ██████████████ 12
-[C#] C#            █████ 4
-```
-
-#### Repositorios em movimento
-- [leonardof-cardoso](https://github.com/leonardof-cardoso/leonardof-cardoso) | [PY] Python | atualizado hoje  
-  Repositorio sem descricao publica.
-- [portfolio](https://github.com/leonardof-cardoso/portfolio) | [CSS] CSS | atualizado hoje  
-  Repositorio sem descricao publica.
-- [fluxo-saas-pulseos](https://github.com/leonardof-cardoso/fluxo-saas-pulseos) | [PY] Python | atualizado hoje  
-  Repositorio sem descricao publica.
-- [bot-discord-py](https://github.com/leonardof-cardoso/bot-discord-py) | [PY] Python | atualizado ha 1 dia  
-  Bot de discord multifuncional para gerenciamento de prints, ausências e comandos úteis no Discord.
-- [chatbot-py](https://github.com/leonardof-cardoso/chatbot-py) | [PY] Python | atualizado ha 1 dia  
-  Repositorio sem descricao publica.
-
-#### Ultimos eventos publicos
-- Fez push com **0 commit(s)** em `leonardof-cardoso/leonardof-cardoso` (28/03/2026)
-- Fez push com **0 commit(s)** em `leonardof-cardoso/leonardof-cardoso` (28/03/2026)
-- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
-- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
-- Fez push com **0 commit(s)** em `leonardof-cardoso/portfolio` (28/03/2026)
-
-#### Mapa tecnico
-- Linguagens em evidenca nos ultimos 30 dias: **[PY] Python, [HTML] HTML, [C#] C#, [JS] JavaScript**
-- Universo analisado: **18 repositorios** com atualizacao publica recente
-
-_Atualizado automaticamente em 28/03/2026 16:53 UTC_
+- linguagens de programacao mais fortes no GitHub recente
+- um grafico textual das linguagens mais utilizadas nos ultimos 30 dias
+- repositorios em destaque para recrutadores
+- a data da ultima sincronizacao
 <!-- dynamic:activity:end -->
 
 ---

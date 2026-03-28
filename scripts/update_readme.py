@@ -16,6 +16,15 @@ END_MARKER = "<!-- dynamic:activity:end -->"
 USERNAME = os.getenv("GITHUB_USERNAME", "leonardof-cardoso")
 API_ROOT = "https://api.github.com"
 USER_AGENT = "readme-github-automation"
+PROGRAMMING_LANGUAGES = {
+    "Python",
+    "C#",
+    "JavaScript",
+    "TypeScript",
+    "PHP",
+    "Go",
+    "Java",
+}
 
 
 def fetch_json(url: str) -> Any:
@@ -32,10 +41,6 @@ def fetch_json(url: str) -> Any:
 
 def iso_to_date(value: str) -> datetime:
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
-
-
-def format_date(value: str) -> str:
-    return iso_to_date(value).strftime("%d/%m/%Y")
 
 
 def relative_days(value: str) -> str:
@@ -55,7 +60,8 @@ def normalize_language(language: str | None) -> str:
         "Jupyter Notebook": "Python",
         "Vue": "JavaScript",
     }
-    return aliases.get(language, language)
+    normalized = aliases.get(language, language)
+    return normalized if normalized in PROGRAMMING_LANGUAGES else "Outros"
 
 
 def icon_for_language(language: str) -> str:
@@ -65,10 +71,6 @@ def icon_for_language(language: str) -> str:
         "JavaScript": "[JS]",
         "TypeScript": "[TS]",
         "PHP": "[PHP]",
-        "HTML": "[HTML]",
-        "CSS": "[CSS]",
-        "Shell": "[SH]",
-        "Dockerfile": "[DKR]",
         "Go": "[GO]",
         "Java": "[JAVA]",
         "Outros": "[ETC]",
@@ -105,15 +107,17 @@ def summarize_profile(repos: list[dict[str, Any]], recent_repos: list[dict[str, 
     return highlights[:3]
 
 
+def filter_programming_repos(repos: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [repo for repo in repos if normalize_language(repo.get("language")) != "Outros"]
+
+
 def build_focus(recent_repos: list[dict[str, Any]]) -> list[str]:
     language_counter: Counter[str] = Counter()
-    topics_counter: Counter[str] = Counter()
 
     for repo in recent_repos:
-        if repo.get("language"):
-            language_counter[normalize_language(repo["language"])] += 1
-        for topic in repo.get("topics", []):
-            topics_counter[topic] += 1
+        language = normalize_language(repo.get("language"))
+        if language != "Outros":
+            language_counter[language] += 1
 
     lines: list[str] = []
     if language_counter:
@@ -121,75 +125,87 @@ def build_focus(recent_repos: list[dict[str, Any]]) -> list[str]:
             f"{icon_for_language(name)} {name}" for name, _ in language_counter.most_common(4)
         )
         lines.append(f"- Linguagens em evidenca nos ultimos 30 dias: **{top_langs}**")
-    if topics_counter:
-        top_topics = ", ".join(name for name, _ in topics_counter.most_common(4))
-        lines.append(f"- Temas recorrentes nos projetos recentes: **{top_topics}**")
-    lines.append(f"- Universo analisado: **{len(recent_repos)} repositorios** com atualizacao publica recente")
+    lines.append(f"- Universo analisado: **{sum(language_counter.values())} sinais tecnicos** em repositorios com linguagens fortes")
     return lines
+
+
+def repo_score(repo: dict[str, Any]) -> int:
+    score = 0
+    name = repo.get("name", "").lower()
+    description = (repo.get("description") or "").lower()
+    language = normalize_language(repo.get("language"))
+
+    if repo.get("archived"):
+        score -= 50
+    if repo.get("fork"):
+        score -= 40
+    if not description:
+        score -= 8
+    else:
+        score += 12
+
+    if language in {"Python", "C#", "TypeScript", "JavaScript", "PHP"}:
+        score += 10
+
+    keywords = [
+        "api",
+        "auth",
+        "jwt",
+        "saas",
+        "dashboard",
+        "discord",
+        "chatbot",
+        "bot",
+        "manager",
+        "task",
+        "etl",
+        "full",
+    ]
+    for keyword in keywords:
+        if keyword in name or keyword in description:
+            score += 6
+
+    score += min(repo.get("stargazers_count", 0), 5)
+    return score
+
+
+def select_showcase_repos(repos: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    candidates = [
+        repo
+        for repo in filter_programming_repos(repos)
+        if repo.get("name") != USERNAME and not repo.get("private", False)
+    ]
+    ranked = sorted(
+        candidates,
+        key=lambda repo: (repo_score(repo), iso_to_date(repo["updated_at"])),
+        reverse=True,
+    )
+    return ranked[:4]
 
 
 def build_repo_lines(repos: list[dict[str, Any]]) -> list[str]:
+    if not repos:
+        return ["- Nenhum repositorio elegivel para vitrine tecnica foi encontrado na leitura atual."]
+
     lines: list[str] = []
-    for repo in repos[:5]:
+    for repo in repos:
         name = repo["name"]
         url = repo["html_url"]
         language = normalize_language(repo.get("language"))
-        updated_at = repo["updated_at"]
         description = (repo.get("description") or "Repositorio sem descricao publica.").strip()
         description = description.replace("\n", " ")
         lines.append(
-            f"- [{name}]({url}) | {icon_for_language(language)} {language} | atualizado {relative_days(updated_at)}  \n"
+            f"- [{name}]({url}) | {icon_for_language(language)} {language}  \n"
             f"  {description}"
         )
     return lines
-
-
-def event_phrase(event: dict[str, Any]) -> str | None:
-    repo_name = event.get("repo", {}).get("name", "repositorio")
-    event_type = event.get("type")
-    payload = event.get("payload", {})
-
-    if event_type == "PushEvent":
-        commits = len(payload.get("commits", []))
-        return f"Fez push com **{commits} commit(s)** em `{repo_name}`"
-    if event_type == "PullRequestEvent":
-        action = payload.get("action", "atualizou")
-        return f"**{action.title()}** pull request em `{repo_name}`"
-    if event_type == "IssuesEvent":
-        action = payload.get("action", "atualizou")
-        return f"**{action.title()}** issue em `{repo_name}`"
-    if event_type == "CreateEvent":
-        ref_type = payload.get("ref_type", "recurso")
-        return f"Criou um novo **{ref_type}** em `{repo_name}`"
-    if event_type == "WatchEvent":
-        return f"Deu star em `{repo_name}`"
-    if event_type == "ForkEvent":
-        return f"Fez fork de `{repo_name}`"
-    if event_type == "ReleaseEvent":
-        return f"Publicou release em `{repo_name}`"
-    return None
-
-
-def build_event_lines(events: list[dict[str, Any]]) -> list[str]:
-    lines: list[str] = []
-    for event in events:
-        phrase = event_phrase(event)
-        if not phrase:
-            continue
-        created_at = event.get("created_at")
-        if not created_at:
-            continue
-        lines.append(f"- {phrase} ({format_date(created_at)})")
-        if len(lines) == 5:
-            break
-    return lines or ["- Sem eventos publicos recentes disponiveis na API do GitHub."]
 
 
 def build_language_chart(recent_repos: list[dict[str, Any]], events: list[dict[str, Any]]) -> list[str]:
     repo_languages = {
         repo["name"]: normalize_language(repo.get("language"))
         for repo in recent_repos
-        if repo.get("name")
+        if repo.get("name") and normalize_language(repo.get("language")) != "Outros"
     }
     language_counter: Counter[str] = Counter()
     cutoff = recent_window()
@@ -206,7 +222,7 @@ def build_language_chart(recent_repos: list[dict[str, Any]], events: list[dict[s
 
         repo_name = repo_full_name.split("/")[-1]
         language = repo_languages.get(repo_name)
-        if not language:
+        if not language or language == "Outros":
             continue
 
         weight = 1
@@ -218,7 +234,7 @@ def build_language_chart(recent_repos: list[dict[str, Any]], events: list[dict[s
         language_counter.update(
             normalize_language(repo.get("language"))
             for repo in recent_repos
-            if repo.get("language")
+            if normalize_language(repo.get("language")) != "Outros"
         )
 
     if not language_counter:
@@ -229,7 +245,7 @@ def build_language_chart(recent_repos: list[dict[str, Any]], events: list[dict[s
     lines = ["```text"]
     for language, value in top_items:
         bar_size = max(1, round((value / max_value) * 16))
-        bar = "█" * bar_size
+        bar = "#" * bar_size
         label = f"{icon_for_language(language)} {language}"
         lines.append(f"{label:<18} {bar} {value}")
     lines.append("```")
@@ -240,13 +256,13 @@ def render_dynamic_block(user: dict[str, Any], repos: list[dict[str, Any]], even
     generated_at = datetime.now(timezone.utc).strftime("%d/%m/%Y %H:%M UTC")
     profile_name = user.get("name") or USERNAME
     cutoff = recent_window()
-    recent_repos = [repo for repo in repos if iso_to_date(repo["updated_at"]) >= cutoff]
-    visible_repos = recent_repos[:5] if recent_repos else repos[:5]
+    recent_repos = filter_programming_repos([repo for repo in repos if iso_to_date(repo["updated_at"]) >= cutoff])
+    showcase_repos = select_showcase_repos(repos)
 
     sections = [
         "### Radar tecnico",
         "",
-        f"Leitura automatica do perfil publico de **{profile_name}** com foco em stack e atividade recente, sem metricas sociais e sem cards externos.",
+        f"Leitura automatica do perfil publico de **{profile_name}** com foco em stack real e projetos que funcionam como vitrine tecnica.",
         "",
         "#### Leitura rapida",
         *summarize_profile(repos, recent_repos),
@@ -254,11 +270,8 @@ def render_dynamic_block(user: dict[str, Any], repos: list[dict[str, Any]], even
         "#### Linguagens mais utilizadas nos ultimos 30 dias",
         *build_language_chart(recent_repos, events),
         "",
-        "#### Repositorios em movimento",
-        *build_repo_lines(visible_repos),
-        "",
-        "#### Ultimos eventos publicos",
-        *build_event_lines(events),
+        "#### Repositorios em destaque",
+        *build_repo_lines(showcase_repos),
         "",
         "#### Mapa tecnico",
         *build_focus(recent_repos),
