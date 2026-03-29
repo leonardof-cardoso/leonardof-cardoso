@@ -2,9 +2,10 @@
 
 **Full Stack Developer** | **Open to Work**
 
-Construo APIs, integracoes, pipelines de dados e produtos web com foco em backend solido, observabilidade e entrega ponta a ponta.
-
-Hoje atuo com Python, C#, PHP, JavaScript e TypeScript em cenarios que misturam desenvolvimento, troubleshooting, dados, cloud e sustentacao de ambientes de producao.
+Desenvolvedor de Software com foco em sustentação de aplicações críticas, troubleshooting avançado e integrações entre sistemas.
+ 
+Atuo diretamente na análise e resolução de incidentes em produção, investigando causas raiz e implementando soluções que aumentam a estabilidade e confiabilidade dos sistemas. Tenho forte experiência com APIs, integrações e evolução de aplicações web, sempre com foco em impacto real no negócio.
+ 
 
 <p align="left">
   <a href="mailto:leogyrs@gmail.com">
@@ -32,7 +33,7 @@ Hoje atuo com Python, C#, PHP, JavaScript e TypeScript em cenarios que misturam 
 
 ---
 
-## Snapshot
+## Skills
 
 - Backend-first com experiencia em APIs REST, ETL, integracoes e automacao
 - Vivencia com ambientes produtivos, logs, monitoramento e diagnostico
@@ -112,22 +113,9 @@ _Atualizado automaticamente em 29/03/2026 09:26 UTC_
 
 ---
 
-## Diferenciais
-
-- Perfil orientado a entrega: codigo, integracao, dados e operacao no mesmo contexto
-- Base forte em backend sem perder visao de produto e experiencia final
-- Capacidade de navegar entre desenvolvimento, infraestrutura e diagnostico
-
-## Educacao
-
-**Universidade Nove de Julho**  
-Analise e Desenvolvimento de Sistemas
-
-**FIEB - Fundacao Instituto de Educacao de Barueri**  
-Tecnologia da Informacao / Sistemas da Informacao
-
 ## Contato
 
 - Email: **leogyrs@gmail.com**
 - LinkedIn: **[linkedin.com/in/l-card](https://www.linkedin.com/in/l-card)**
 - GitHub: **[github.com/leonardof-cardoso](https://github.com/leonardof-cardoso)**
+- Portfólio: **[leonardof-cardoso-portfolio.vercel.app](https://leonardof-cardoso-portfolio.vercel.app/)**
