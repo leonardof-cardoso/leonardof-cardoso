@@ -33,13 +33,6 @@ Atuo diretamente na análise e resolução de incidentes em produção, investig
 
 ---
 
-## Skills
-
-- Backend-first com experiencia em APIs REST, ETL, integracoes e automacao
-- Vivencia com ambientes produtivos, logs, monitoramento e diagnostico
-- Atuacao em arquitetura, deploy, banco de dados e sustentacao operacional
-- Interesse continuo em construir solucoes escalaveis, seguras e bem observadas
-
 ## Stack principal
 
 **Linguagens e frameworks**
@@ -72,16 +65,7 @@ Atuo diretamente na análise e resolução de incidentes em produção, investig
 - Docker, Git, GitHub, CI/CD, Netlify e Vercel
 - Redes e infraestrutura com Mikrotik, Fortinet, Unifi, PfSense, Cisco Meraki, Cisco WLC e Ruckus
 
----
-
-## Painel vivo
-
-Esse bloco e atualizado automaticamente pelo GitHub Actions. A ideia aqui e manter um perfil simples, mas vivo: stack principal, linguagens fortes e projetos com cara de vitrine tecnica.
-
-<!-- dynamic:activity:start -->
-### Radar tecnico
-
-Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack real e projetos que funcionam como vitrine tecnica.
+--
 
 #### Leitura rapida
 - Ultima movimentacao visivel em **leonardof-cardoso**, atualizado hoje
@@ -115,6 +99,4 @@ _Atualizado automaticamente em 10/04/2026 09:41 UTC_
 ## Contato
 
 - Email: **leogyrs@gmail.com**
-- LinkedIn: **[linkedin.com/in/l-card](https://www.linkedin.com/in/l-card)**
-- GitHub: **[github.com/leonardof-cardoso](https://github.com/leonardof-cardoso)**
 - Portfólio: **[leonardof-cardoso-portfolio.vercel.app](https://leonardof-cardoso-portfolio.vercel.app/)**
