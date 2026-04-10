@@ -56,15 +56,6 @@ Atuo diretamente na análise e resolução de incidentes em produção, investig
 
 `MySQL` `PostgreSQL` `MongoDB` `Docker` `GitHub Actions` `Azure` `AWS` `Google Cloud` `Postman`
 
-**Competencias**
-
-- APIs RESTful, Webhooks, OAuth2 e SSO
-- ETL, ingestao e transformacao de dados
-- SQL com MySQL, PostgreSQL e SQL Server
-- Monitoramento, logs, troubleshooting e suporte a producao
-- Docker, Git, GitHub, CI/CD, Netlify e Vercel
-- Redes e infraestrutura com Mikrotik, Fortinet, Unifi, PfSense, Cisco Meraki, Cisco WLC e Ruckus
-
 --
 
 #### Leitura rapida
