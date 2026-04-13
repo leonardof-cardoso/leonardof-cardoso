@@ -14,6 +14,7 @@ README_PATH = Path("README.md")
 START_MARKER = "<!-- dynamic:activity:start -->"
 END_MARKER = "<!-- dynamic:activity:end -->"
 USERNAME = os.getenv("GITHUB_USERNAME", "leonardof-cardoso")
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 API_ROOT = "https://api.github.com"
 USER_AGENT = "readme-github-automation"
 PROGRAMMING_LANGUAGES = {
@@ -28,12 +29,16 @@ PROGRAMMING_LANGUAGES = {
 
 
 def fetch_json(url: str) -> Any:
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": USER_AGENT,
+    }
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+
     request = urllib.request.Request(
         url,
-        headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": USER_AGENT,
-        },
+        headers=headers,
     )
     with urllib.request.urlopen(request, timeout=20) as response:
         return json.load(response)

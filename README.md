@@ -58,6 +58,7 @@ Atuo diretamente na análise e resolução de incidentes em produção, investig
 
 --
 
+<!-- dynamic:activity:start -->
 #### Leitura rapida
 - Ultima movimentacao visivel em **leonardof-cardoso**, atualizado hoje
 - **13 repositorios** receberam atividade publica nos ultimos 30 dias

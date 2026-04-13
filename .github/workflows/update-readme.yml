@@ -24,6 +24,7 @@ jobs:
       - name: Generate dynamic README section
         env:
           GITHUB_USERNAME: leonardof-cardoso
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_readme.py
 
       - name: Commit changes
