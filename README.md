@@ -59,14 +59,18 @@ Atuo diretamente na análise e resolução de incidentes em produção, investig
 --
 
 <!-- dynamic:activity:start -->
+### Radar tecnico
+
+Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack real e projetos que funcionam como vitrine tecnica.
+
 #### Leitura rapida
 - Ultima movimentacao visivel em **leonardof-cardoso**, atualizado hoje
-- **13 repositorios** receberam atividade publica nos ultimos 30 dias
+- **12 repositorios** receberam atividade publica nos ultimos 30 dias
 - Stack mais presente na janela recente: **Python, C#, JavaScript**
 
 #### Linguagens mais utilizadas nos ultimos 30 dias
 ```text
-[PY] Python        ################ 5
+[PY] Python        ################ 8
 ```
 
 #### Repositorios em destaque
@@ -81,9 +85,9 @@ Atuo diretamente na análise e resolução de incidentes em produção, investig
 
 #### Mapa tecnico
 - Linguagens em evidenca nos ultimos 30 dias: **[PY] Python, [C#] C#, [JS] JavaScript, [TS] TypeScript**
-- Universo analisado: **13 sinais tecnicos** em repositorios com linguagens fortes
+- Universo analisado: **12 sinais tecnicos** em repositorios com linguagens fortes
 
-_Atualizado automaticamente em 10/04/2026 09:41 UTC_
+_Atualizado automaticamente em 14/04/2026 09:48 UTC_
 <!-- dynamic:activity:end -->
 
 -- 
