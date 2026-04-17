@@ -64,13 +64,14 @@ Atuo diretamente na análise e resolução de incidentes em produção, investig
 Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack real e projetos que funcionam como vitrine tecnica.
 
 #### Leitura rapida
-- Ultima movimentacao visivel em **leonardof-cardoso**, atualizado hoje
-- **12 repositorios** receberam atividade publica nos ultimos 30 dias
+- Ultima movimentacao visivel em **payFlow**, atualizado hoje
+- **13 repositorios** receberam atividade publica nos ultimos 30 dias
 - Stack mais presente na janela recente: **Python, C#, JavaScript**
 
 #### Linguagens mais utilizadas nos ultimos 30 dias
 ```text
-[PY] Python        ################ 8
+[PY] Python        ################ 7
+[C#] C#            ######### 4
 ```
 
 #### Repositorios em destaque
@@ -85,9 +86,9 @@ Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack r
 
 #### Mapa tecnico
 - Linguagens em evidenca nos ultimos 30 dias: **[PY] Python, [C#] C#, [JS] JavaScript, [TS] TypeScript**
-- Universo analisado: **12 sinais tecnicos** em repositorios com linguagens fortes
+- Universo analisado: **13 sinais tecnicos** em repositorios com linguagens fortes
 
-_Atualizado automaticamente em 16/04/2026 09:47 UTC_
+_Atualizado automaticamente em 17/04/2026 09:47 UTC_
 <!-- dynamic:activity:end -->
 
 -- 
