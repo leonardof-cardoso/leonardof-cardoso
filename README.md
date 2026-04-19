@@ -65,7 +65,7 @@ Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack r
 
 #### Leitura rapida
 - Ultima movimentacao visivel em **leonardof-cardoso**, atualizado hoje
-- **12 repositorios** receberam atividade publica nos ultimos 30 dias
+- **11 repositorios** receberam atividade publica nos ultimos 30 dias
 - Stack mais presente na janela recente: **Python, C#, JavaScript**
 
 #### Linguagens mais utilizadas nos ultimos 30 dias
@@ -86,9 +86,9 @@ Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack r
 
 #### Mapa tecnico
 - Linguagens em evidenca nos ultimos 30 dias: **[PY] Python, [C#] C#, [JS] JavaScript**
-- Universo analisado: **12 sinais tecnicos** em repositorios com linguagens fortes
+- Universo analisado: **11 sinais tecnicos** em repositorios com linguagens fortes
 
-_Atualizado automaticamente em 18/04/2026 09:32 UTC_
+_Atualizado automaticamente em 19/04/2026 09:31 UTC_
 <!-- dynamic:activity:end -->
 
 -- 
