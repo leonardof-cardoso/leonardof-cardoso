@@ -70,8 +70,8 @@ Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack r
 
 #### Linguagens mais utilizadas nos ultimos 30 dias
 ```text
-[PY] Python        ################ 11
-[C#] C#            ###### 4
+[PY] Python        ################ 9
+[C#] C#            ####### 4
 ```
 
 #### Repositorios em destaque
@@ -88,7 +88,7 @@ Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack r
 - Linguagens em evidenca nos ultimos 30 dias: **[PY] Python, [C#] C#**
 - Universo analisado: **4 sinais tecnicos** em repositorios com linguagens fortes
 
-_Atualizado automaticamente em 10/05/2026 09:47 UTC_
+_Atualizado automaticamente em 11/05/2026 10:26 UTC_
 <!-- dynamic:activity:end -->
 
 -- 
