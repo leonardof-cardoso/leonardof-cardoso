@@ -70,7 +70,7 @@ Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack r
 
 #### Linguagens mais utilizadas nos ultimos 30 dias
 ```text
-[PY] Python        ################ 4
+[PY] Python        ################ 2
 ```
 
 #### Repositorios em destaque
@@ -87,7 +87,7 @@ Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack r
 - Linguagens em evidenca nos ultimos 30 dias: **[PY] Python**
 - Universo analisado: **2 sinais tecnicos** em repositorios com linguagens fortes
 
-_Atualizado automaticamente em 17/05/2026 09:53 UTC_
+_Atualizado automaticamente em 18/05/2026 10:43 UTC_
 <!-- dynamic:activity:end -->
 
 -- 
