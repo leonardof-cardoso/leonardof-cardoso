@@ -61,16 +61,16 @@ Atuo diretamente na análise e resolução de incidentes em produção, investig
 <!-- dynamic:activity:start -->
 ### Radar tecnico
 
-Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack real e projetos que funcionam como vitrine tecnica.
+Leitura automatica do perfil de **Leonardo Cardoso** com foco em stack real e projetos que funcionam como vitrine tecnica.
 
 #### Leitura rapida
 - Ultima movimentacao visivel em **leonardof-cardoso**, atualizado hoje
-- **1 repositorios** receberam atividade publica nos ultimos 30 dias
+- **1 repositorios** receberam atividade nos ultimos 30 dias
 - Stack mais presente na janela recente: **Python**
 
 #### Linguagens mais utilizadas nos ultimos 30 dias
 ```text
-[PY] Python        ################ 1
+[PY] Python        ################ 2
 ```
 
 #### Repositorios em destaque
@@ -87,7 +87,7 @@ Leitura automatica do perfil publico de **Leonardo Cardoso** com foco em stack r
 - Linguagens em evidenca nos ultimos 30 dias: **[PY] Python**
 - Universo analisado: **1 sinais tecnicos** em repositorios com linguagens fortes
 
-_Atualizado automaticamente em 25/07/2026 02:20 UTC_
+_Atualizado automaticamente em 25/07/2026 02:22 UTC_
 <!-- dynamic:activity:end -->
 
 -- 
