@@ -14,7 +14,8 @@ README_PATH = Path("README.md")
 START_MARKER = "<!-- dynamic:activity:start -->"
 END_MARKER = "<!-- dynamic:activity:end -->"
 USERNAME = os.getenv("GITHUB_USERNAME", "leonardof-cardoso")
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+# ponytail: GH_PAT primeiro; o GITHUB_TOKEN padrao do Actions nao enxerga outros repos
+GITHUB_TOKEN = os.getenv("GH_PAT") or os.getenv("GITHUB_TOKEN")
 API_ROOT = "https://api.github.com"
 USER_AGENT = "readme-github-automation"
 PROGRAMMING_LANGUAGES = {
@@ -92,11 +93,13 @@ def summarize_profile(repos: list[dict[str, Any]], recent_repos: list[dict[str, 
 
     if recent_repos:
         latest = recent_repos[0]
+        # ponytail: nao vaza nome de repo privado no README publico
+        latest_name = "um repositorio privado" if latest.get("private") else f"**{latest['name']}**"
         highlights.append(
-            f"- Ultima movimentacao visivel em **{latest['name']}**, atualizado {relative_days(latest['updated_at'])}"
+            f"- Ultima movimentacao visivel em {latest_name}, atualizado {relative_days(latest['updated_at'])}"
         )
         highlights.append(
-            f"- **{len(recent_repos)} repositorios** receberam atividade publica nos ultimos 30 dias"
+            f"- **{len(recent_repos)} repositorios** receberam atividade nos ultimos 30 dias"
         )
 
     language_counts = Counter(
@@ -107,7 +110,7 @@ def summarize_profile(repos: list[dict[str, Any]], recent_repos: list[dict[str, 
         highlights.append(f"- Stack mais presente na janela recente: **{common}**")
 
     if not highlights:
-        highlights.append("- Sem atividade publica suficiente nos ultimos 30 dias para montar um resumo recente")
+        highlights.append("- Sem atividade suficiente nos ultimos 30 dias para montar um resumo recente")
 
     return highlights[:3]
 
@@ -243,7 +246,7 @@ def build_language_chart(recent_repos: list[dict[str, Any]], events: list[dict[s
         )
 
     if not language_counter:
-        return ["```text", "Sem dados publicos suficientes nos ultimos 30 dias.", "```"]
+        return ["```text", "Sem dados suficientes nos ultimos 30 dias.", "```"]
 
     top_items = language_counter.most_common(5)
     max_value = top_items[0][1]
@@ -267,7 +270,7 @@ def render_dynamic_block(user: dict[str, Any], repos: list[dict[str, Any]], even
     sections = [
         "### Radar tecnico",
         "",
-        f"Leitura automatica do perfil publico de **{profile_name}** com foco em stack real e projetos que funcionam como vitrine tecnica.",
+        f"Leitura automatica do perfil de **{profile_name}** com foco em stack real e projetos que funcionam como vitrine tecnica.",
         "",
         "#### Leitura rapida",
         *summarize_profile(repos, recent_repos),
@@ -296,10 +299,22 @@ def replace_block(content: str, new_block: str) -> str:
 
 
 def main() -> None:
+    # ponytail: /user/repos e /users/{u}/events so retornam privados quando autenticado como o proprio usuario
+    repos_url = (
+        f"{API_ROOT}/user/repos?per_page=100&sort=updated&visibility=all&affiliation=owner"
+        if GITHUB_TOKEN
+        else f"{API_ROOT}/users/{USERNAME}/repos?per_page=100&sort=updated"
+    )
+    events_url = (
+        f"{API_ROOT}/users/{USERNAME}/events?per_page=100"
+        if GITHUB_TOKEN
+        else f"{API_ROOT}/users/{USERNAME}/events/public?per_page=30"
+    )
+
     try:
         user = fetch_json(f"{API_ROOT}/users/{USERNAME}")
-        repos = fetch_json(f"{API_ROOT}/users/{USERNAME}/repos?per_page=100&sort=updated")
-        events = fetch_json(f"{API_ROOT}/users/{USERNAME}/events/public?per_page=30")
+        repos = fetch_json(repos_url)
+        events = fetch_json(events_url)
     except urllib.error.HTTPError as exc:
         raise SystemExit(f"Erro ao consultar API do GitHub: {exc.code} {exc.reason}") from exc
     except urllib.error.URLError as exc:
