@@ -88,6 +88,4 @@ _Atualizado automaticamente em 07/08/2026 10:08 UTC_
 ## Contato
 
 - Email: **leogyrs@gmail.com**
-- LinkedIn: **[linkedin.com/in/l-card](https://www.linkedin.com/in/l-card)**
 - GitHub: **[github.com/leonardof-cardoso](https://github.com/leonardof-cardoso)**
-- Portfólio: **[leonardof-cardoso-portfolio.vercel.app](https://leonardof-cardoso-portfolio.vercel.app/)**
